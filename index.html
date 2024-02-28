@@ -14,13 +14,20 @@
           <a href="#">About</a>
       </nav>
     </header>
-    <!-- <div class="gallery-container"></div> -->
-    <div class="meme-editor">
+    <div class="gallery-container rounded">
+        <div class="gallery-filters">
+            <input class="filter-input rounded" oninput="onAddText(this.value)" type="text" placeholder="Can't get fired" name="add-text" />
+            <div class="tags rounded"></div>
+            <button class="more-btn rounded">More</button>
+        </div>
+
+    </div>
+    <div class="meme-editor-container">
         <div class="card canvas-container rounded">
             <canvas class="rounded" width="450" height="450"onmousemove="onMouseMove(event)"></canvas>
         </div>
         <div class="card editor-container rounded">
-            <input class="filter-input rounded" oninput="onAddText(this.value)" type="text" placeholder="Can't get fired" name="filter" />
+            <input class="filter-input rounded" oninput="onAddText(this.value)" type="text" placeholder="Can't get fired" name="add-text" />
             <div class="lines-btns">
                 <button class="btn rounded">
                     <img src="symbols/arrow-up.svg" alt="">

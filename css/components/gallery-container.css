@@ -1,3 +1,22 @@
 .gallery-container{
-    color: black;
+    display: none;
+    background-color: #383B44;
+    height: max-content;
+    /* width: 100vw; */
+}
+
+.gallery-filters{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+
+    padding: 28px 20px;
+    font-size: 1rem;
+}
+.gallery-filters > * {
+    padding-inline-start: 2em;
+}
+.tags{
+    background-color: #88898D;
+    /* align-self: center; */
 }
