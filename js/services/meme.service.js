@@ -1,8 +1,9 @@
 "use strict";
 
-var gImgs = [{ id: 1, url: "img/1.jpg", keywords: ["funny", "cat"] }];
+var gImgs = [{ id: 1, url: "img/1.jpg", keywords: ["trump", "funny"] }];
+
 var gMeme = {
-  selectedImgId: 5,
+  selectedImgId: 1,
   selectedLineIdx: 0,
   lines: [
     {

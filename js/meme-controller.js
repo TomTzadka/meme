@@ -1,22 +1,24 @@
 'use strict'
 
+const TOUCH_EVENTS = ['touchstart', 'touchmove', 'touchend']
+
 let gElCanvas;
 let gCtx;
 let gCurrImgAddress = '../img/1.jpg'
+let gCurrText = 'text'
 
 function onInit() {
     
     gElCanvas = document.querySelector("canvas");
     gCtx = gElCanvas.getContext("2d");
     renderMeme()
+    addListeners()
   }
   
-  function renderMeme(){
+function renderMeme(){
     renderImg()
-    // drawText('text', 100, 50)
-
 }
-
+ 
 
 function renderImg() {
   let img = new Image();
@@ -27,6 +29,7 @@ function renderImg() {
   
     // Draw the img on the canvas
     gCtx.drawImage(img, 0, 0, gElCanvas.width, gElCanvas.height);
+    drawText(gCurrText, 100, 50)
   };
 }
 
