@@ -1,16 +1,6 @@
 "use strict";
 
-function makeId(length = 5) {
-  var text = "";
-  var possible =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-  for (var i = 0; i < length; i++) {
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-  }
-
-  return text;
-}
 
 function downloadCSV(elLink, objects) {
   const csvContent = _getAsCSV(objects);
@@ -41,16 +31,3 @@ function downloadCanvasAsImg() {
   link.click();
 }
 
-
-
-let gSound;
-function playSound(name) {
-  const sound = new Audio(`sound/${name}.mp3`);
-  sound.play();
-  gSound = sound
-//   if (name === "background") gBackgroundSound = sound;
-}
-
-function stopSound() {
-    gSound.pause();
-}

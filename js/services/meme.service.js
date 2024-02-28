@@ -6,7 +6,7 @@ let gCtx;
 
 
 var gMeme = {
-  selectedImgId: 1,
+  selectedImgId: getRandomInt(0, gImgs.length-1),
   selectedLineIdx: 0,
   lines: [
     {
