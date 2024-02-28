@@ -1,0 +1,24 @@
+.main-header{
+    display: grid;
+    grid-template-columns: 1fr 50vw;
+
+    width: 100vw;
+    height: 76px;
+
+    background: rgba(89, 112, 193, 1);
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    padding-inline-end: 248px;
+    width: 200px;
+}
+.logo{
+    padding-inline-start: 125px;
+    padding-block-start: 29px ;
+
+}

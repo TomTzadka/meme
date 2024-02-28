@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body onload="onInit()">
+    <header class="main-header rounded">
+      <div class="logo">LOGO</div>
+      <nav>
+          <a href="#">Gallery</a>
+          <a href="#">About</a>
+      </nav>
+    </header>
+    <!-- <div class="gallery-container"></div> -->
+    <div class="meme-editor">
+        <div class="card canvas-container rounded">
+            <canvas class="rounded" width="450" height="450"onmousemove="onMouseMove(event)"></canvas>
+        </div>
+        <div class="card editor-container rounded">
+            <input class="filter-input rounded" oninput="onSetFilterBy(this)" type="text" placeholder="Can't get fierd" name="filter" />
+            <div class="lines-btns">
+                <button class="btn rounded">
+                    <img src="symbols/arrow-up.svg" alt="">
+                    <img src="symbols/arrow-down.svg" alt="">
+                </button>
+                <button class="btn rounded">
+                    <img src="symbols/+.svg" alt="">
+                </button>
+                <button class="btn rounded">
+                    <img src="symbols/trash.svg" alt="">
+                </button>
+            </div>
+            <div class="text-btns rounded">
+                <button class="btn rounded">
+                    <img src="symbols/A+.svg" alt="">
+                </button>
+                <button class="btn rounded">
+                    <img src="symbols/A-.svg" alt="">
+                </button>
+                <button class="btn rounded">
+                    <img src="symbols/text-to-left.svg" alt="">
+                </button>
+                <button class="btn rounded">
+                    <img src="symbols/text-to-center.svg" alt="">
+                </button>
+                <button class="btn rounded">
+                    <img src="symbols/text-to-right.svg" alt="">
+                </button>
+                <select class="font-filter" name="font" id="">
+                    <option value="impact">impact</option>
+                </select>
+                <button class="btn rounded">
+                    <img src="symbols/s.svg" alt="">
+                </button>
+                <button class="btn rounded">
+                    <img src="symbols/painter.svg" alt="">
+                </button>
+            </div>
+            <div class="emoji-container rounded">
+                <img src="symbols/emoji off.png" alt="">
+                <img src="symbols/Emoji on.png" alt="">
+                <img src="symbols/Emoji-Calque 7.png" alt="">
+                <img src="symbols/Emoji-Calque 8.png" alt="">
+            </div>
+            <div class="action-btns">
+                <button class="btn share-btn">
+                <img src="symbols/share.svg" alt="">
+                <span>Share</span>
+            </button>
+            <button class="btn download-btn">
+                <img src="symbols/download.svg" alt="">                
+                <span>Download</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/services/storge.service.js"></script>
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/gallery.service.js"></script>
+    <script src="js/services/meme.service.js"></script>
+    <script src="js/gallery-controller.js"></script>
+    <script src="js/meme-controller.js"></script>
+    <script src="js/meme-editor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+.btn{
+    background-color: rgb(225, 181, 124);
+    /* width: 60px; */
+    /* height: 55px; */
+}
+img{
+    max-width: 100%;
+}
