@@ -2,34 +2,32 @@
 
 const TOUCH_EVENTS = ['touchstart', 'touchmove', 'touchend']
 
-let gElCanvas;
-let gCtx;
-let gCurrImgAddress = '../img/1.jpg'
-let gCurrText = 'text'
 
 function onInit() {
     
     gElCanvas = document.querySelector("canvas");
     gCtx = gElCanvas.getContext("2d");
     renderMeme()
-    addListeners()
+    // addListeners()
   }
   
 function renderMeme(){
-    renderImg()
+  let meme = getMeme()
+  renderImg(meme)
+    // console.log(meme);
 }
  
 
-function renderImg() {
+function renderImg(meme) {
   let img = new Image();
-  img.src = gCurrImgAddress;
+  img.src = meme.imgAd;
   img.onload = ()=> {
     // Adjust the canvas to the new image size
     gElCanvas.height = (img.naturalHeight / img.naturalWidth) * gElCanvas.width;
   
     // Draw the img on the canvas
     gCtx.drawImage(img, 0, 0, gElCanvas.width, gElCanvas.height);
-    drawText(gCurrText, 100, 50)
+    drawText(meme.lines[0].txt, 100, 50)
   };
 }
 
@@ -46,4 +44,12 @@ function drawText(text, x, y) {
 
 	gCtx.fillText(text, x, y)
 	gCtx.strokeText(text, x, y)
+}
+
+function onAddText(inputTxt){
+  // console.log(elBtn.value);
+  setLineTxt(inputTxt)
+  renderMeme()
+
+
 }
