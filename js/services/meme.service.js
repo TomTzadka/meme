@@ -3,14 +3,10 @@
 let gElCanvas;
 let gCtx;
 
-var gImgs = [
-  { id: 1, url: "img/1.jpg", keywords: ["trump", "funny"] },
-  { id: 2, url: "img/2.jpg", keywords: ["dogs", "cute"] },
 
-];
 
 var gMeme = {
-  selectedImgId: 0,
+  selectedImgId: 1,
   selectedLineIdx: 0,
   lines: [
     {
@@ -24,6 +20,8 @@ var gMeme = {
 
 
 function getMeme(){
+  // console.log('gImgs[gMeme.selectedImgId]',gImgs);
+  // console.log('gMeme',gMeme);
   return{
     imgAd: gImgs[gMeme.selectedImgId].url,
     lines: gMeme.lines

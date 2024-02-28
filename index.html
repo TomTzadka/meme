@@ -10,15 +10,18 @@
     <header class="main-header rounded">
       <div class="logo">LOGO</div>
       <nav>
-          <a href="#">Gallery</a>
+          <a href="#" onclick="onMoveToPage()">Gallery</a>
           <a href="#">About</a>
       </nav>
     </header>
-    <div class="gallery-container rounded">
+    <div class="gallery-container rounded hide">
         <div class="gallery-filters">
             <input class="filter-input rounded" oninput="onAddText(this.value)" type="text" placeholder="Can't get fired" name="add-text" />
             <div class="tags rounded"></div>
             <button class="more-btn rounded">More</button>
+        </div>
+        <div class="img-gallery">
+            <!-- <img onclick="onMoveToEditor(this,1-1)" class="rounded" src="img/1.jpg" alt=""> -->
         </div>
 
     </div>
