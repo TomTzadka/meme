@@ -31,7 +31,7 @@
         <div class="card editor-container rounded">
             <input class="filter-input rounded" oninput="onAddText(this.value)" type="text" placeholder="Can't get fired" name="add-text" />
             <div class="lines-btns">
-                <button class="btn rounded">
+                <button class="btn rounded arrows">
                     <img src="symbols/arrow-up.svg" alt="">
                     <img src="symbols/arrow-down.svg" alt="">
                 </button>
@@ -58,7 +58,7 @@
                 <button class="btn rounded">
                     <img src="symbols/text-to-right.svg" onclick="onTextAlign('right')" alt="">
                 </button>
-                <select class="font-filter" onchange="onChangeFont(this.value)" name="font" id="font-filter">
+                <select class="font-filter rounded" onchange="onChangeFont(this.value)" name="font" id="font-filter">
                     <option value="impact">impact</option>
                     <option value="courier new">Courier New</option>
                 </select>
@@ -78,14 +78,13 @@
                 <img src="symbols/Emoji-Calque 8.png" alt="">
             </div>
             <div class="action-btns">
-                <button class="btn share-btn">
+                <button class="btn share-btn rounded">
                 <img src="symbols/share.svg" alt="">
-                <span>Share</span>
+                <a href="#" onclick="onShare(this)">Share</a>                
             </button>
-            <button class="btn download-btn" onclick="">
+            <button class="btn download-btn rounded" onclick="">
                 <img src="symbols/download.svg" alt="">
                 <a href="#" onclick="onDownloadImg(this)">Download</a>                
-                <!-- <span>Download</span> -->
             </div>
         </div>
     </div>

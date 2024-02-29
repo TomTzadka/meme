@@ -6,15 +6,19 @@
 }
 body{
     background-color: var(--secondary-color);
+    
 }
 .btn{
-    background-color: rgb(225, 181, 124);
+    background-color: rgb(142, 112, 57);
+    height: 50px;
+    width: 50px;
 }
 img{
     max-width: 100%;
 }
 a {
-    text-decoration: none;
     all: initial;
     color: white;
+    cursor: pointer;
+    font-size: 16px;
 }
