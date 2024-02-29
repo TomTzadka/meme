@@ -65,9 +65,15 @@
                 <button class="btn rounded">
                     <img src="symbols/s.svg" alt="">
                 </button>
-                <button class="btn rounded">
+                <!-- <button class="btn rounded">
                     <img src="symbols/painter.svg" alt="">
+                    <input type="color" id="text-color" name="text-color" value="#ff0000">
+                </button> -->
+                <button class="btn rounded" onclick="onOpenColorPicker()">
+                    <img id="painterIcon" src="symbols/painter.svg" alt="">
+                    <input type="color" id="text-color" name="text-color" value="#ff0000" style="display: none;">
                 </button>
+                
             </div>
             <div class="emoji-container rounded">
                 <img src="symbols/emoji off.png" alt="">
@@ -80,9 +86,10 @@
                 <img src="symbols/share.svg" alt="">
                 <span>Share</span>
             </button>
-            <button class="btn download-btn">
-                <img src="symbols/download.svg" alt="">                
-                <span>Download</span>
+            <button class="btn download-btn" onclick="">
+                <img src="symbols/download.svg" alt="">
+                <a href="#" onclick="onDownloadImg(this)">Download</a>                
+                <!-- <span>Download</span> -->
             </div>
         </div>
     </div>

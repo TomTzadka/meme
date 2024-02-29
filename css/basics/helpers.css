@@ -1,9 +1,7 @@
 .rounded{
     border-radius: 15px;
 }
-.hide{
-    display: none;
-}
+
 .pointer{
     cursor: pointer;
 }

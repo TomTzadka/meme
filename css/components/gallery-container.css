@@ -1,9 +1,8 @@
 .gallery-container{
     /* display: block; */
     display: none;
-    background-color: #383B44;
+    background-color: var(--primary-color);
     height: max-content;
-    /* width: 100vw; */
 }
 
 .gallery-filters{
@@ -19,13 +18,10 @@
 }
 .tags{
     background-color: #88898D;
-    /* align-self: center; */
 }
 .img-gallery{
     display: grid;
-    /* grid-template-columns: repeat(5,1fr); */
     grid-template-columns: repeat(5,1fr);
-    /* grid-template-rows: repeat(5,1fr); */
     gap: 25px;
     padding: 0 50px;
 }
