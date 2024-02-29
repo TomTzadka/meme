@@ -51,16 +51,18 @@
                     <img src="symbols/A-.svg" onclick="onChangeTextSize(false)" alt="">
                 </button>
                 <button class="btn rounded">
-                    <img src="symbols/text-to-left.svg" alt="">
+                    <img src="symbols/text-to-left.svg" onclick="onTextAlign('left')" alt="">
                 </button>
                 <button class="btn rounded">
-                    <img src="symbols/text-to-center.svg" alt="">
+                    <img src="symbols/text-to-center.svg" onclick="onTextAlign('center')" alt="">
                 </button>
                 <button class="btn rounded">
-                    <img src="symbols/text-to-right.svg" alt="">
+                    <img src="symbols/text-to-right.svg" onclick="onTextAlign('right')" alt="">
                 </button>
-                <select class="font-filter" name="font" id="">
+                <select class="font-filter" onchange="onChangeFont(this.value)" name="font" id="font-filter">
                     <option value="impact">impact</option>
+                    <option value="ariel">Ariel</option>
+                    <option value="courier new">Courier New</option>
                 </select>
                 <button class="btn rounded">
                     <img src="symbols/s.svg" alt="">

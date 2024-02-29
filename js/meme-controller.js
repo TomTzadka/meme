@@ -26,23 +26,21 @@ function renderImg(meme) {
   
     gCtx.drawImage(img, 0, 0, gElCanvas.width, gElCanvas.height);
     
-    var {txt,pos,size,color} = meme.lines[0]
+    var {txt,pos,size,color,dirAlien,font} = meme.lines[0]
     
-    drawText(txt,size,color, pos.x, pos.y)
+    drawText(txt,size,color,dirAlien,font, pos.x, pos.y)
   };
 }
 
 
-function drawText(line,size,color, x, y) {
+function drawText(line,size,color,dirAlien,font, x, y) {
   gCtx.lineWidth = 1
 	gCtx.strokeStyle = 'black'
 	gCtx.fillStyle = color
 
-	gCtx.font = `${size}px Arial`
-	// gCtx.textAlign = 'center'
-	gCtx.textAlign = 'left'
-	// gCtx.textAlign = 'right'
-	// gCtx.textBaseline = 'middle'
+	gCtx.font = `${size}px ${font}`
+	gCtx.textAlign = dirAlien
+	gCtx.textBaseline = 'middle'
   
 	gCtx.fillText(line, x, y)
 	gCtx.strokeText(line, x, y)
@@ -63,5 +61,15 @@ function onOpenColorPicker(){
 }
 function onChangeTextSize(isIncrease){
   setLineSize(isIncrease)
+  renderMeme()
+}
+function onTextAlign(dir){
+  textAlign(dir)
+  renderMeme()
+}
+
+function onChangeFont(font){
+  // console.log(font);
+  changeFont(font)
   renderMeme()
 }
