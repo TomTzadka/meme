@@ -13,6 +13,14 @@
     padding: 28px 20px;
     font-size: 1rem;
 }
+.gallery-filters input[type="text"] {
+    /* background-image: url("../search.svg"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 10px right; */
+    /* padding-right: 10px; */
+    /* margin: 40px;  */
+}
+
 .gallery-filters > * {
     padding-inline-start: 2em;
 }

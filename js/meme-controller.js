@@ -8,13 +8,12 @@ function onInit() {
     gElCanvas = document.querySelector("canvas");
     gCtx = gElCanvas.getContext("2d");
     renderMeme()
-    // addListeners()
+    addListeners()
   }
   
 function renderMeme(){
   let meme = getMeme()
   renderImg(meme)
-    // console.log(meme);
 }
  
 
@@ -56,7 +55,6 @@ function onDownloadImg(elLink){
 
 function onOpenColorPicker(){
   openColorPicker()
-  // console.log('gMeme',resGmeme);
   renderMeme()
 }
 function onChangeTextSize(isIncrease){
@@ -69,7 +67,6 @@ function onTextAlign(dir){
 }
 
 function onChangeFont(font){
-  // console.log(font);
   changeFont(font)
   renderMeme()
 }

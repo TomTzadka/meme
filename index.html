@@ -8,7 +8,7 @@
   </head>
   <body onload="onInit()">
     <header class="main-header rounded">
-      <div class="logo">LOGO</div>
+      <img src="img/LOGO.svg" class="logo" alt="">
       <nav>
           <a href="#" onclick="onMoveToPage()">Gallery</a>
           <a href="#">About</a>
@@ -16,12 +16,11 @@
     </header>
     <div class="gallery-container rounded hide">
         <div class="gallery-filters">
-            <input class="filter-input rounded" oninput="onAddText(this.value)" type="text" placeholder="Can't get fired" name="add-text" />
+            <input class="filter-input rounded" oninput="onAddText(this.value)" type="text" placeholder="Search.." name="add-text" />
             <div class="tags rounded"></div>
             <button class="more-btn rounded">More</button>
         </div>
         <div class="img-gallery">
-            <!-- <img onclick="onMoveToEditor(this,1-1)" class="rounded" src="img/1.jpg" alt=""> -->
         </div>
 
     </div>
@@ -61,7 +60,6 @@
                 </button>
                 <select class="font-filter" onchange="onChangeFont(this.value)" name="font" id="font-filter">
                     <option value="impact">impact</option>
-                    <option value="ariel">Ariel</option>
                     <option value="courier new">Courier New</option>
                 </select>
                 <button class="btn rounded">
@@ -99,6 +97,7 @@
     <script src="js/services/util.service.js"></script>
     <script src="js/services/gallery.service.js"></script>
     <script src="js/services/meme.service.js"></script>
+    <script src="js/services/drag.service.js"></script>
     <script src="js/gallery-controller.js"></script>
     <script src="js/meme-controller.js"></script>
     <script src="js/meme-editor.js"></script>

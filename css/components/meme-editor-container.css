@@ -1,27 +1,23 @@
 .meme-editor-container{
-    /* display: none; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     margin: 0 auto;
     
     
-    color: rgb(210, 183, 183);
     height: 80vh;
 }
+/* .meme-editor-container{ */
+    /* display: grid; */
+    /* grid-template-rows: repeat(2,1fr); */
+/* } */
 .card{
-
     width: 528px;
     height: 549px;
     margin: 0 auto;
     text-align: center;
-
-
     background-color:var(--primary-color);
-
-
 }
-
 
 canvas {
     
@@ -36,8 +32,6 @@ canvas {
     grid-template-rows: repeat(5,1fr);
     justify-content:center;
     align-items: center;
-    
-    width: 100%;
 }
 .filter-input{
     width: 100%;

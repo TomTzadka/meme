@@ -13,14 +13,13 @@ var gMeme = {
       color: "red",
       dirAlien: "left",
       pos: { x: 10, y: 50 },
-      font: 'Ariel'
+      font: 'Ariel',
+      isDrag: false,
     },
   ],
 };
 
 function getMeme() {
-  // console.log('gImgs[gMeme.selectedImgId]',gImgs);
-  // console.log('gMeme',gMeme);
   return {
     imgAd: gImgs[gMeme.selectedImgId].url,
     lines: gMeme.lines,
