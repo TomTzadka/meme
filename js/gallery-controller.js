@@ -7,7 +7,6 @@ function initGallery(){
 
 function renderTags(){
     const elTags = document.querySelector('.tags')
-    console.log(elTags);
     var str = '' 
     
     for(const tag in gKeywordSearchCountMap){
@@ -16,8 +15,6 @@ function renderTags(){
         // console.log(tag);
         // console.log('count',count);
     }
-    console.log(str);
-    console.log(elTags);
     elTags.innerText = str
 }
 
@@ -34,12 +31,9 @@ function renderGallery(){
         imgsHtml.push(str)
     }
     )
-
-    // console.log(imgsHtml);
     elImgsContainer.innerHTML = imgsHtml.join('') 
 }
-// onMoveToEditor(this)
-var gIsGalleryPage = false;
+
 function onMoveToPage(idx){
     const elEditor = document.querySelector('.meme-editor-container')
     const elGallery = document.querySelector('.gallery-container')

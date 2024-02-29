@@ -11,7 +11,7 @@ var gMeme = {
   lines: [
     {
       txt: "Can't get fired",
-      size: 20,
+      size: 40,
       color: "red",
     },
   ],
@@ -28,13 +28,19 @@ function getMeme(){
   }
 }
 
+function setLineSize(isIncrease){
+  if(isIncrease){
+    gMeme.lines[0].size += 5
+  }else{
+    gMeme.lines[0].size -= 5
+  }
+}
 function setLineTxt(inputTxt){
     gMeme.lines[0].txt = inputTxt
 }
 
 function downloadImg(elLink) {
-  // console.log(elLink);
-  const imgContent = gElCanvas.toDataURL('image/jpeg') // image/jpeg the default format
+  const imgContent = gElCanvas.toDataURL('image/jpeg')
   elLink.href = imgContent
   elLink.download = "img.jpeg";
 }
@@ -43,11 +49,8 @@ function openColorPicker() {
   const colorInput = document.getElementById('text-color')
   colorInput.click()
   colorInput.addEventListener('input',()=> {
-      console.log(colorInput.value);
       gMeme.lines[0].color = colorInput.value
-      // console.log(gMeme.lines[0].color);
       // const painterIcon = document.getElementById('painterIcon');
-      // painterIcon.style.fill = this.value;
+      // painterIcon.style.fill = colorInput.value;
   });
-  return gMeme
 }

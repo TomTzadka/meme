@@ -27,7 +27,7 @@ var gImgs = [
 
 
 var gKeywordSearchCountMap = { funny: 12, cat: 16, baby: 2 };
-
+var gIsGalleryPage = false;
 
 
 function getImgs(){
