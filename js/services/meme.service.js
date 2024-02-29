@@ -13,6 +13,8 @@ var gMeme = {
       txt: "Can't get fired",
       size: 40,
       color: "red",
+      dirAlien:'left',
+      pos:{x:10,y:50}
     },
   ],
 };

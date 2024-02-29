@@ -25,22 +25,27 @@ function renderImg(meme) {
     gElCanvas.height = (img.naturalHeight / img.naturalWidth) * gElCanvas.width;
   
     gCtx.drawImage(img, 0, 0, gElCanvas.width, gElCanvas.height);
-    drawText(meme.lines[0], 100, 50)
+    
+    var {txt,pos,size,color} = meme.lines[0]
+    
+    drawText(txt,size,color, pos.x, pos.y)
   };
 }
 
 
-function drawText(line, x, y) {
+function drawText(line,size,color, x, y) {
   gCtx.lineWidth = 1
 	gCtx.strokeStyle = 'black'
-	gCtx.fillStyle = line.color
+	gCtx.fillStyle = color
 
-	gCtx.font = `${line.size}px Arial`
-	gCtx.textAlign = 'center'
-	gCtx.textBaseline = 'middle'
-
-	gCtx.fillText(line.txt, x, y)
-	gCtx.strokeText(line.txt, x, y)
+	gCtx.font = `${size}px Arial`
+	// gCtx.textAlign = 'center'
+	gCtx.textAlign = 'left'
+	// gCtx.textAlign = 'right'
+	// gCtx.textBaseline = 'middle'
+  
+	gCtx.fillText(line, x, y)
+	gCtx.strokeText(line, x, y)
 }
 
 function onAddText(inputTxt){
