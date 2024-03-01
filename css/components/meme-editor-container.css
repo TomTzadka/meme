@@ -21,20 +21,17 @@ canvas {
 }
 .editor-container{
     display: grid;
-    grid-template-rows: repeat(5,1fr);
-    /* row-gap: 20px; */
-    height: max-content;
-    width: 100%;
+    grid-template-rows: repeat(2,max-content);
+    row-gap: 20px;
     justify-content:center;
     align-items: center;
-    /* padding: 15px; */
+    padding: 5px;
 }
 .canvas-container{
     display: flex;
 }
 
 .filter-input{
-    /* width: 50%; */
     height: 59px;
 }
 .lines-btns{

@@ -3,16 +3,15 @@
     grid-template-columns: 1fr 50vw;
     align-items: center;
 
-    height: 76px;
-
+    height: 10vh;
     background: rgba(89, 112, 193, 1);
 
 }
 nav{
-    justify-self:start;
+    justify-self:center;
     display: flex;
     gap: 40px;
 }
 .logo{
-    padding-inline-start: 125px;
+    padding-inline-start: 18%;
 }

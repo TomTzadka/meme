@@ -15,7 +15,9 @@ body{
 }
 img{
     max-width: 100%;
+    
 }
+
 a {
     all: initial;
     color: white;
