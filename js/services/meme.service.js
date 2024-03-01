@@ -70,3 +70,9 @@ function textAlign(dir) {
 function changeFont(font){
   gMeme.lines[0].font = font
 }
+
+function saveCanvas() {
+  const imgContent = gElCanvas.toDataURL("image/jpeg")
+  // console.log(imgContent);
+  saveToStorage(CANVAS_DB, imgContent);
+}

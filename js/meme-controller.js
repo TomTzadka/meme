@@ -9,11 +9,14 @@ function onInit() {
     gCtx = gElCanvas.getContext("2d");
     renderMeme()
     addListeners()
+    console.log('ttt');
+    _saveCanvas()
   }
   
 function renderMeme(){
   let meme = getMeme()
   renderImg(meme)
+
 }
  
 
@@ -69,4 +72,8 @@ function onTextAlign(dir){
 function onChangeFont(font){
   changeFont(font)
   renderMeme()
+}
+
+function onSaveCanvas(){
+  saveCanvas()
 }
