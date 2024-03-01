@@ -37,6 +37,11 @@ canvas {
     /* width: 50%; */
     height: 59px;
 }
+.lines-btns{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
 .text-btns{
     display: grid;
     grid-template-columns: repeat(5,1fr);

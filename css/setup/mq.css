@@ -1,8 +1,12 @@
 /* MOBILE ONLY */
 @media (max-width: 860px) {
-    body{
-        /* background-color: red; */
+    .text-btns{
+        grid-row: 1/2;
     }
+    .lines-btns{
+        justify-content: space-around;
+    }
+    
 
 }
 
