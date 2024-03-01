@@ -77,3 +77,4 @@ function onChangeFont(font){
 function onSaveCanvas(){
   saveCanvas()
 }
+

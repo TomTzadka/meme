@@ -3,6 +3,7 @@
 
 const CANVAS_DB = 'canvasDB'
 
+// localStorage.clear();
 function saveToStorage(key, value) {
     const valueStr = JSON.stringify(value)
     console.log(`Saving ${valueStr.length} bytes to local storage...` )

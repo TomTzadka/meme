@@ -1,22 +1,53 @@
 /* MOBILE ONLY */
 @media (max-width: 860px) {
-
-}
-
-
-/* SMALL */
-@media (min-width: 640px) {
+    body{
+        /* background-color: red; */
+    }
 
 }
 
 /* MEDIUM */
 @media (min-width: 860px) {
-
+    .meme-editor-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        
+        
+    }
+    .card{
+        height: 549px;
+    }
+    .editor-container{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    
+        width: 100%;
+        justify-content:center;
+        align-items: center;
+        padding: 15px;
+    }
+    .filter-input{
+        width: 100%;
+    }
+    .editor-container > *{
+        grid-column: 1/-1;
+    
+    }
 
 }
 
 /* LARGE */
-@media (min-width: 1040px) {
-
-
+@media (min-width: 1100px) {
+    .card{
+        width: 528px;
+    }
+    .text-btns{
+        column-gap:30px ;
+    }
+    .editor-container{
+        padding: 35px;
+    }
 }

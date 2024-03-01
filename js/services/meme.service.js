@@ -76,3 +76,7 @@ function saveCanvas() {
   // console.log(imgContent);
   saveToStorage(CANVAS_DB, imgContent);
 }
+
+function getFromStorage(){
+  return loadFromStorage(CANVAS_DB)
+}
