@@ -54,6 +54,9 @@
     .gallery-filters{
         grid-template-columns: 47% 1fr;
     }
+    nav{
+        gap: 40px;
+    }
 }
 
 /* LARGE */

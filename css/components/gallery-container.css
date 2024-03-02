@@ -13,11 +13,11 @@
     font-size: 1rem;
 }
 .gallery-filters input[type="text"] {
-    /* background-image: url("../search.svg"); */
-    /* background-repeat: no-repeat; */
-    /* background-position: 10px right; */
-    /* padding-right: 10px; */
-    /* margin: 40px;  */
+    font-size: 20px;
+    background-image: url("../search.svg");
+    background-color: #22252C;
+    background-repeat: no-repeat;
+    padding-left: 10px;
 }
 .gallery-filters  .more-btn{
     background: var(--gradient-color);
@@ -39,7 +39,7 @@
     text-align: center;
     padding-top: 10px;
     font-size: 20px;
-    
+
 }
 
 .img-gallery{
