@@ -1,18 +1,13 @@
 .gallery-container{
-    /* display: block; */
     display: none;
     background-color: var(--primary-color);
     height: max-content;
 }
 
+
 .gallery-filters{
     display: grid;
-    /* grid-template-columns: repeat(2,1fr); */
-    grid-template-columns: 1fr max-content;
     gap: 10px;
-    /* grid-template-rows: 1fr 1fr; */
-    /* grid-template-columns: ; */
-    /* gap: 15px; */
 
     padding: 28px 20px;
     font-size: 1rem;
@@ -24,17 +19,19 @@
     /* padding-right: 10px; */
     /* margin: 40px;  */
 }
-.gallery-filter  .more-btn{
-    font-size: 6rem;
-    background-color: red;
-    /* grid-column: 1/-1; */
+.gallery-filters  .more-btn{
+    /* background-color: red; */
+    background: var(--gradient-color);
+    height: 32px;
+    align-self: center;
     
 }
 
 .tags-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 90px;
     gap: 10px;
+    height: 48px;
 }
 .tags{
     background-color: #88898D;

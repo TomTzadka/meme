@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body onload="onInit()">
-    <header class="main-header rounded">
+    <header class="main-header extra-rounded">
       <img src="img/LOGO.svg" class="logo" alt="">
       <nav>
           <a href="#" onclick="onMoveToPage()">Gallery</a>
@@ -16,10 +16,10 @@
     </header>
     <div class="gallery-container rounded hide">
         <div class=" gallery-filters">
-            <input class="filter-input search-input rounded" oninput="onSearch(this.value)" type="text" placeholder="Search.." name="add-text" />
+            <input class="filter-input search-input extra-rounded" oninput="onSearch(this.value)" type="text" placeholder="Search.." name="add-text" />
             <div class="tags-container">
-                <div class="tags rounded"></div>
-                <button class=" more-btn rounded">More</button>
+                <div class="tags extra-rounded"></div>
+                <button class=" more-btn extra-rounded">More</button>
             </div>    
         </div>
         <div class="img-gallery">
@@ -31,16 +31,16 @@
             <canvas class="rounded" width="450" height="450"onmousemove="onMouseMove(event)"></canvas>
         </div>
         <div class="card editor-container rounded">
-            <input class="filter-input rounded" oninput="onAddText(this.value)" type="text" placeholder="Can't get fired" name="add-text" />
+            <input class="filter-input extra-rounded" oninput="onAddText(this.value)" type="text" placeholder="Can't get fired" name="add-text" />
             <div class="lines-btns">
                 <button class="btn rounded arrows">
                     <img src="symbols/arrow-up.svg" alt="">
                     <img src="symbols/arrow-down.svg" alt="">
                 </button>
-                <button class="btn rounded">
+                <button class="btn add-line-btn rounded">
                     <img src="symbols/+.svg" alt="">
                 </button>
-                <button class="btn rounded">
+                <button class="btn trash-btn rounded">
                     <img src="symbols/trash.svg" alt="">
                 </button>
             </div>
@@ -73,7 +73,7 @@
                 </button>
                 
             </div>
-            <div class="emoji-container rounded">
+            <div class="emoji-container extra-rounded">
                 <img src="symbols/emoji off.png" alt="">
                 <img src="symbols/Emoji on.png" alt="">
                 <img src="symbols/Emoji-Calque 7.png" alt="">

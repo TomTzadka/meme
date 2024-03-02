@@ -1,6 +1,9 @@
 .rounded{
     border-radius: 15px;
 }
+.extra-rounded{
+    border-radius: 40px;
+}
 
 .pointer{
     cursor: pointer;

@@ -1,13 +1,8 @@
-.meme-editor-container{
-    /* align-items: center; */
-    
-    /* height: 80vh; */
-}
+
 .card{
-    /* width: max-content; */
     text-align: center;
     background-color:var(--primary-color);
-    margin: 20px auto 0 ;
+    margin: 20px 0 ;
 }
 .canvas-container{
     display: flex;
@@ -15,7 +10,7 @@
     align-items: center;
 }
 canvas {
-    width: 90%;
+    width: 100%;
     background-color: white;
     border: 1px solid rgb(0, 0, 0);
 }
@@ -24,7 +19,7 @@ canvas {
     grid-template-rows: repeat(2,max-content);
     row-gap: 20px;
     align-items: center;
-    padding: 5px;
+    padding: 20px 0px;
 }
 .canvas-container{
     display: flex;
@@ -57,12 +52,20 @@ select{
     background-color: white;
     height: max-content;
 }
+
 .arrows{
     background-color: #4BB7D2;
     display: inline-grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
+.add-line-btn{
+    background-color: #3AC34F;
+}
+.trash-btn{
+    background-color: #DA2E37;
+}
+
 .action-btns {
     display: flex;
     justify-content: space-around;

@@ -5,6 +5,7 @@
 
     height: 10vh;
     background: rgba(89, 112, 193, 1);
+    background: var(--gradient-color);
 
 }
 nav{

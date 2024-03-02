@@ -11,9 +11,7 @@
     }
     .gallery-filter{
         grid-template-rows: repeat(2,1fr);
-        /* display: flex; */
-        /* justify-content: space-around; */
-        /* grid-template-rows: 1fr 1fr; */
+        
     }
     .gallery-filter > * {
         grid-column: 1/-1;
@@ -45,10 +43,6 @@
         display: grid;
         justify-content:center;
         align-items: center;
-        padding: 35px;
-    }
-    input{
-        /* width: 100%; */
     }
     .editor-container > *{
         grid-column: 1/-1;
@@ -57,9 +51,8 @@
     .img-gallery{
         grid-template-columns: repeat(4,1fr);
     }
-    .gallery-filter{
-        /* display: grid; */
-        /* grid-template-columns: repeat(3,1fr); */
+    .gallery-filters{
+        grid-template-columns: 47% 1fr;
     }
 }
 
