@@ -6,12 +6,14 @@
     height: 10vh;
     background: rgba(89, 112, 193, 1);
     background: var(--gradient-color);
+    font-size: 21px;
 
 }
 nav{
     justify-self:center;
     display: flex;
     gap: 40px;
+    align-items : center;
 }
 .logo{
     padding-inline-start: 18%;

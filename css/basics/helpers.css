@@ -8,3 +8,7 @@
 .pointer{
     cursor: pointer;
 }
+.white-border{
+    border:solid 1px white; 
+    padding: 5px 15px; 
+}

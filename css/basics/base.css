@@ -1,5 +1,6 @@
 :root{
     font-size: 16px;
+    color: var(--font-color);
 }
 *{
     box-sizing: border-box;
@@ -23,9 +24,10 @@ img{
 
 a {
     all: initial;
-    color: white;
+    color: var(--font-color);
     cursor: pointer;
-    font-size: 16px;
+    font-size: 21px;
+    color: var(--gradient-color);
 }
 
 /* width */

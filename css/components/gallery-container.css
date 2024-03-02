@@ -20,8 +20,8 @@
     /* margin: 40px;  */
 }
 .gallery-filters  .more-btn{
-    /* background-color: red; */
     background: var(--gradient-color);
+    color: var(--font-color);
     height: 32px;
     align-self: center;
     
@@ -35,6 +35,11 @@
 }
 .tags{
     background-color: #88898D;
+    color: var(--font-color);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    
 }
 
 .img-gallery{

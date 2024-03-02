@@ -9,17 +9,14 @@ function onInit() {
     gCtx = gElCanvas.getContext("2d");
     renderMeme()
     addListeners()
-    console.log('ttt');
     _saveCanvas()
   }
   
 function renderMeme(){
   let meme = getMeme()
   renderImg(meme)
-
 }
  
-
 function renderImg(meme) {
   let img = new Image();
   img.src = meme.imgAd;

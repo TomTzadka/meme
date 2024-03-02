@@ -1,8 +1,5 @@
 'use strict'
 
-
-
-
 var gImgs = [
     { id: 1, url: "img/1.jpg", keywords: ["trump", "funny","man"] },
     { id: 2, url: "img/2.jpg", keywords: ["dogs", "cute"] },
@@ -23,10 +20,8 @@ var gImgs = [
     { id: 17, url: "img/17.jpg", keywords: ["man", "putin"] },
     { id: 18, url: "img/18.jpg", keywords: ["baz", "toy"] },
   ];
-
 let gImgsCopy = gImgs.slice();
-
-var gKeywordSearchCountMap = { funny: 12, cat: 16, baby: 2 };
+var gKeywordSearchCountMap = { funny: 3, cat: 16, baby: 2 ,man:8,trump:1,cute:5};
 var gIsGalleryPage = false;
 
 
