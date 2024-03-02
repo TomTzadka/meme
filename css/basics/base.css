@@ -13,8 +13,11 @@ body{
     height: 50px;
     width: 50px;
 }
+input{
+    height: 59px;
+}
 img{
-    max-width: 100%;
+    max-width: 90%;
     
 }
 

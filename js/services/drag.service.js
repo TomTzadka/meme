@@ -7,7 +7,7 @@ function onMouseMove(ev){
     var {offsetX,offsetY} = ev
     var {x,y} = gMeme.lines[0].pos
 
-
+	// console.log(ev);
     if(offsetX <= x + gElCanvas.width / 2  && offsetY >= y && offsetY <= y+10){// above text
         console.log('txt pos');
         document.body.style.cursor = 'pointer'
@@ -20,11 +20,11 @@ function onMouseMove(ev){
 
 
 function addMouseListeners() {
-    console.log('addMouseListeners');
+    // console.log('addMouseListeners');
 
 	gElCanvas.addEventListener('mousedown', onDown)
-	// gElCanvas.addEventListener('mousemove', onMove)
-	// gElCanvas.addEventListener('mouseup', onUp)
+	gElCanvas.addEventListener('mousemove', onMove)
+	gElCanvas.addEventListener('mouseup', onUp)
 }
 
 
@@ -38,6 +38,8 @@ function onDown(ev) {
 	//Save the pos we start from
 	document.body.style.cursor = 'grabbing'
 }
+
+
 
 
 //Handle the listeners

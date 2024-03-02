@@ -35,6 +35,8 @@ function setLineSize(isIncrease) {
 }
 function setLineTxt(inputTxt) {
   gMeme.lines[0].txt = inputTxt;
+  
+
 }
 
 function downloadImg(elLink) {

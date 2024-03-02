@@ -2,6 +2,7 @@
 
 initGallery()
 function initGallery(){
+    renderGallery()
     renderTags()
 }
 
@@ -18,7 +19,7 @@ function renderTags(){
     elTags.innerText = str
 }
 
-renderGallery()
+// renderGallery()
 function renderGallery(){
     const elImgsContainer = document.querySelector('.img-gallery')
     const imgsHtml = []
@@ -50,3 +51,16 @@ function onMoveToPage(idx){
     }
     gIsGalleryPage = !gIsGalleryPage
 }
+
+
+
+function onSearch(value){
+    // console.log(value);
+    search(value)
+    renderGallery()
+    // console.log(elSearch.value);
+    // gQueryOptions.filterBy.txt = elSearch.value
+    if(!value) return
+    else search(value)
+    // renderTable()
+  }
